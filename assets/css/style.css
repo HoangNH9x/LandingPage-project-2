@@ -116,7 +116,7 @@ font-size: 1.6rem;
 /* Hero */
 
 .hero {
-    padding-top: 72px;
+    padding-top: 56px;
     padding-bottom: 64px;
     background: #FFFCF4;
 }
@@ -135,6 +135,7 @@ font-size: 1.6rem;
     height: 685px;
     object-fit: fill;
     border-radius: 20px;
+    display: block;
 }
 
 .hero-summary {
@@ -150,10 +151,27 @@ font-size: 1.6rem;
 
 .hero-summary .item {
     display: flex;
+    align-items: center;
 }
 
 .hero-summary .info {
     margin-left: 10px;
+}
+
+.hero-summary .lable {
+color: #5F5B53;
+font-family: Poppins;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
+}
+
+.hero-summary .title {
+color: #171100;
+font-family: Poppins;
+font-size: 1.8rem;
+font-weight: 600;
+line-height: 1.7; /* 166.667% */
 }
 
 .hero-summary .item + .item {
@@ -177,7 +195,7 @@ letter-spacing: -1.16px;
 }
 
 .hero .desc {
-margin: 22px 0;
+margin-top: 22px;
 color: #5F5B53;
 font-family: Poppins;
 font-size: 1.8rem;
@@ -225,7 +243,7 @@ line-height: 1.16; /* 166.667% */
 }
 
 .hero .stats {
-    margin-left: -28px;
+    margin: 8px 0 0 -28px;
 }
 
 .hero .stats strong {
