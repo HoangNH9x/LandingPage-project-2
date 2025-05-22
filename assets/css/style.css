@@ -289,3 +289,30 @@ line-height: 1.7; /* 166.667% */
     justify-content: space-between;
 }
 
+.popular-top .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;    
+    transition: ease-in 0.4s;
+    cursor: pointer;
+}
+
+.popular-top .control {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.popular-top .control-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+
+
