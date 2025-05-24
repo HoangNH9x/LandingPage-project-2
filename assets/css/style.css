@@ -39,7 +39,7 @@ transition: ease 0.5s;
 }
 
 .btn:hover{
-    opacity: 0.8;
+    background: var(--primary-color);
     cursor: pointer;
 }
 
