@@ -314,5 +314,35 @@ line-height: 1.7; /* 166.667% */
     color: white;
 }
 
+/* Course */
+.popular .course-list {
+    display: flex;
+    margin: 55px 0 0 0;
+    gap: 30px;
+}
+
+.popular .course-item {
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+    flex: 1;
+}
+
+.popular .course-item .thumb {
+    border-radius: 12px 12px 0px 0px;
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    object-fit: cover;
+}
+
+.popular .course-item .info {
+    padding: 16px 22px 22px;
+}
+
+.popular .course-item .head {
+    display: flex;
+}
+
 
 
