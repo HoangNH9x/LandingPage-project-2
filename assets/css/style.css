@@ -429,8 +429,15 @@ line-height: 1.6; /* 166.667% */
     background: #2E2100;
 }
 
-.feedback-item {
+.feedback-list { /* cần note lại để sau học về javascript tạo hiệu ứng trượt*/
     display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {  /*note*/
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -456,6 +463,103 @@ color: #F7F7F7
     font-weight: 400;
     line-height: 1.8; /* 185.714% */
 }
+
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+width: 6px;
+height: 6px;
+margin-right: 6px;
+border-radius: 50%;
+background: #634700;
+}
+
+.feedback-item .dot.active {
+    background: var(--primary-color);
+    cursor: default;
+}
+
+.feedback-item .content {
+    position: relative;
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote {
+    margin-left: 30px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+/* Featured */
+.featured {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.featured .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.featured .images img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.featured .images img:first-child {
+    margin-top: 34px;
+}
+
+.featured .content { /* 1 cach de chinh style flex */
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.featured .desc {
+margin-top: 16px;
+color: #5F5B53;
+font-family: Poppins;
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 1.7; /* 175% */
+}
+
+.featured .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.featured .content .cta-btn:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
 
 
 
